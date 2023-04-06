@@ -25,16 +25,16 @@ The following prime factorization algorithms:
 To use this library, add it as a dependency in your Cargo.toml file:
 ``` toml
 [dependencies]
-rust-prime-factorization = "0.1.0"
+pfact = { path = "path/to/pfact"}
 ```
 
 Then, import the desired algorithm(s) in your Rust source code:
 
 ```rust
-extern crate rust_prime_factorization;
+extern crate pfact;
 
-use rust_prime_factorization::trial_division;
-use rust_prime_factorization::pollards_rho;
+use pfact::trial_division;
+use pfact::pollards_rho;
 // ... import other algorithms as needed
 ```
 
@@ -46,5 +46,5 @@ fn main() {
     let factors = trial_division::factorize(number);
     println!("Prime factors: {:?}", factors);
 }
-Replace trial_division with the desired algorithm in the example above.
+// Replace trial_division with the desired algorithm in the example above.
 ```
