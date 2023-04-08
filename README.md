@@ -41,10 +41,13 @@ use pfact::pollards_rho;
 To factorize a number using a specific algorithm:
 
 ```rust
+use num_bigint::BigUint;
+use pfact::trial_division;
+
 fn main() {
-    let number = 1234567;
-    let factors = trial_division::factorize(number);
-    println!("Prime factors: {:?}", factors);
+    let number: BigUint = BigUint::from(1234567u32);
+    let factor = trial_division::get_lowest_prime_factor(number);
+    println!("Prime factors: {}", factor);
 }
 // Replace trial_division with the desired algorithm in the example above.
 ```
