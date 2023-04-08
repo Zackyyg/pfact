@@ -5,7 +5,7 @@ This Rust library provides various prime factorization algorithms for integers. 
 ## Algorithms
 The following prime factorization algorithms:
 
-1. Trial Division (TODO)
+1. Trial Division
 2. Wheel Factorization (TODO)
 3. Pollard's Rho Algorithm (TODO)
 4. Algebraic Group Factorization (TODO)
