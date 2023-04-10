@@ -6,19 +6,18 @@ This Rust library provides various prime factorization algorithms for integers. 
 The following prime factorization algorithms:
 
 1. Trial Division
-2. Wheel Factorization (TODO)
-3. Pollard's Rho Algorithm (TODO)
-4. Algebraic Group Factorization (TODO)
-5. Fermat's Factorization Method (TODO)
-6. Euler's Factorization Method (TODO)
-7. Special Number Field Sieve (TODO)
-8. Dixon's Algorithm (TODO)
-9. Continued Fraction Factorization (TODO)
-10. Quadratic Sieve (TODO)
-11. Rational Sieve (TODO)
-12. General Number Field Sieve (TODO)
-13. Shanks's Square Form Factorization (TODO)
-15. Pollard's p-1 Factorization (TODO)
+2. Pollard's Rho Algorithm (TODO)
+3. Algebraic Group Factorization (TODO)
+4. Fermat's Factorization Method (TODO)
+5. Euler's Factorization Method (TODO)
+6. Special Number Field Sieve (TODO)
+7. Dixon's Algorithm (TODO)
+8. Continued Fraction Factorization (TODO)
+9. Quadratic Sieve (TODO)
+10. Rational Sieve (TODO)
+11. General Number Field Sieve (TODO)
+12. Shanks's Square Form Factorization (TODO)
+13. Pollard's p-1 Factorization (TODO)
 
 ## Usage
 
