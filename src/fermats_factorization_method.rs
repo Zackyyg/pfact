@@ -4,7 +4,7 @@ pub fn get_list_of_prime_factors(n: BigUint) -> Vec<BigUint> {
     let mut prime_list: Vec<BigUint> = Vec::new();
     let one: BigUint = BigUint::from(1u8);
 
-    let mut a: BigUint = n.sqrt();
+    let mut a: BigUint = n.sqrt() + &one;
 
     if &a * &a == n {
         prime_list.push(a.clone());
@@ -13,23 +13,16 @@ pub fn get_list_of_prime_factors(n: BigUint) -> Vec<BigUint> {
     }
 
     loop {
-        let aa = &a * &a;
-        let b1: BigUint = if aa >= n { aa - &n } else { &n - aa };
+        let b1 = a.pow(2) - &n;
         let b: BigUint = b1.sqrt();
         if &b * &b == b1 {
-            if a >= b {
-                prime_list.push(&a - &b);
-                prime_list.push(&a + &b);
-            } else {
-                prime_list.push(&b - &a);
-                prime_list.push(&a + &b);
-            }
+            prime_list.push(&a - &b);
+            prime_list.push(&a + &b);
             break;
         } else {
             a = &a + &one;
         }
     }
-
     prime_list
 }
 
