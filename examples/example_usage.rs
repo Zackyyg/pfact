@@ -1,9 +1,9 @@
 use num_bigint::BigUint;
 
-use pfact::trial_division::get_list_of_prime_factors;
+use pfact::pollards_rho;
 
 fn main() {
-    let number = 56;
-    let prime_factors = get_list_of_prime_factors(BigUint::from(56u32));
+    let number: usize = 3838740211;
+    let prime_factors = pollards_rho::get_list_of_prime_factors(BigUint::from(number));
     println!("The prime factors of {} are: {:?}", number, prime_factors);
 }

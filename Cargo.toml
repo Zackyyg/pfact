@@ -1,3 +1,7 @@
+[[bin]]
+name = "pfact"
+path = "examples/example_usage.rs"
+
 [package]
 name = "pfact"
 version = "0.1.0"
