@@ -9,3 +9,5 @@ fn main() {
     let prime_factors = fermats_factorization_method::get_list_of_prime_factors(BigUint::from_str(&number).expect("Failed to convert string to BigUint"));
     println!("The prime factors of {} are: {:?}", number, prime_factors);
 }
+
+
